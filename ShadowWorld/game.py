@@ -151,7 +151,7 @@ def update():
                 source_entity.player
                 sound.play_sound('jump.wav')
             except AttributeError as err:
-                print(err.message)
+                print(err )
         elif evt.name == 'bullet-coll':
             bullet = evt.source_entity
             GAME_INSTANCE.get_current_loc().remove_entity(bullet)

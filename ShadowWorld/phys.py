@@ -132,7 +132,7 @@ def process(gameInstance):
                             vel = 0, vel[1]
 
             if info.kind == 'bullet':
-                for k, v in coll_dir.iteritems():
+                for k, v in coll_dir.items():
                     if v:
                         events.append(Event('bullet-coll', source_entity=e))
 
