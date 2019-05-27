@@ -144,8 +144,6 @@ def load_loc(filename):
     tiles = {}
     for section in parser.sections():
         if len(section) == 1:
-            print(section, parser.items(section))
-
             desc = {}
             tiles[section] = Tile(**dict(parser.items(section)))
 
@@ -167,9 +165,6 @@ def load_loc(filename):
             if tile:
                 if len(tile.entity_props) > 0:
                     e_args = dict(tile.entity_props)
-
-                    print('entity to make ID:', e_args['id'])
-
                     pos = util.tile_entity_pos((j, i))
                     e_args['pos'] = pos
                     loc.add_entity(entity.make(**e_args))
