@@ -2,6 +2,7 @@ import os
 import sys
 import pickle
 import zlib
+import random
 
 import pygame
 
@@ -83,7 +84,7 @@ def enter(**kwargs):
     GAME_INSTANCE.win_cooldown = -1
 
     global CURRENT_TRACK
-    CURRENT_TRACK = 0
+    CURRENT_TRACK = random.randint(0, len(PLAYLIST) - 1)
 
     sound.load_music(PLAYLIST[CURRENT_TRACK])
     sound.play_music()
