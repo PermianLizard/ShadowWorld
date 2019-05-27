@@ -1,0 +1,32 @@
+[map]
+data = .........................
+       .                       .
+       .                       .
+       .                       .
+       8                       .
+       88                      .
+       08                      .
+       08                      .
+       80                      8
+       08                     =8
+       88                    ==8
+       80                 80===8
+       88...............==08===8
+bg = bg_1.png
+
+[8]
+tile_type = solid
+tile_group = 1
+tileset = tileset_dirt.tga
+
+[0]
+tile_type = solid
+tile_group = 1
+tileset = tileset_dirt_rock.tga
+tile_group_tolerance = 1
+
+[=]
+tile_type = bg
+tile_group = 2
+tileset = tileset_dirt_bg.tga
+tile_group_tolerance = 1

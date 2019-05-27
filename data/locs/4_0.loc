@@ -1,0 +1,57 @@
+[map]
+data = .........................
+       .                       .
+       .                       .
+       .                       .
+       .   =                   .
+       .  ===                  .
+       . ====                  .
+       .==s==                  .
+       88888==        ====     .
+       08888=== b  ====8888=   .
+       08888888888888888888=== .
+       8080880808888888888808888
+       0808080008888888888088888
+
+bg = bg_1.png
+
+[8]
+tile_type = solid
+tile_group = 1
+tileset = tileset_dirt.tga
+
+[0]
+tile_type = solid
+tile_group = 1
+tileset = tileset_dirt_rock.tga
+tile_group_tolerance = 1
+
+[=]
+tile_type = bg
+tile_group = 2
+tileset = tileset_dirt_bg.tga
+tile_group_tolerance = 1
+
+[b]
+tile_type = none
+entity_id = enemy
+entity_face_right = true
+entity_spritesheet = blob.png
+entity_size = 16 16
+entity_behavior = patrol
+
+[@]
+tile_type = none
+entity_id = player
+entity_face_right = true
+entity_spritesheet = player.png
+entity_size = 16 16
+
+[s]
+tile_type = bg
+tile_group = 2
+tileset = tileset_dirt_bg.tga
+tile_group_tolerance = 1
+entity_id = site
+entity_spritesheet = save_site.png
+entity_effects = save

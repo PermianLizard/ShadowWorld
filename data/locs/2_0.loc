@@ -1,0 +1,46 @@
+[map]
+data = .........................
+       .                       .
+       .                       .
+       .                       .
+       .                 ==   80
+       .                ===   88
+       .               =====  80
+       .              ========08
+       .             =========80
+       .            =====s==8088
+       .      88888~888888888080
+       .   888808088800080888088
+       8880800088808000080880880
+bg = bg_1.png
+
+[8]
+tile_type = solid
+tile_group = 1
+tileset = tileset_dirt.tga
+
+[0]
+tile_type = solid
+tile_group = 1
+tileset = tileset_dirt_rock.tga
+tile_group_tolerance = 1
+
+[~]
+tile_type = none
+entity_id = liquid
+entity_spritesheet = water.png
+
+[=]
+tile_type = bg
+tile_group = 2
+tileset = tileset_dirt_bg.tga
+tile_group_tolerance = 1
+
+[s]
+tile_type = bg
+tile_group = 2
+tileset = tileset_dirt_bg.tga
+tile_group_tolerance = 1
+entity_id = site
+entity_spritesheet = save_site.png
+entity_effects = save

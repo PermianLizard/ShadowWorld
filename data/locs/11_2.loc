@@ -1,0 +1,70 @@
+[map]
+data = 8888888888888888888888888
+       88888888==88============8
+       8888======88============8
+       8888=================b==8
+       8888==8888888888888888==8
+       ======8888888888888888==8
+       ======888888888=========8
+       888888888888888=b=======8
+       8888888888888888888888==8
+       88=====888888888888888==8
+       88======88==============8
+       88==s===================8
+       0088888888888888888008088
+
+bg = bg_1.png
+
+[8]
+tile_type = solid
+tile_group = 1
+tileset = tileset_dirt.tga
+tile_group_tolerance = 2
+
+[0]
+tile_type = solid
+tile_group = 1
+tileset = tileset_dirt_rock.tga
+tile_group_tolerance = 2
+
+["]
+tile_type = solid
+tile_group = 2
+tileset = tileset_greens.tga
+
+[=]
+tile_type = bg
+tile_group = 3
+tileset = tileset_dirt_bg.tga
+tile_group_tolerance = 1 2
+
+[b]
+tile_type = bg
+tile_group = 3
+tileset = tileset_dirt_bg.tga
+tile_group_tolerance = 1 2
+
+entity_id = enemy
+entity_face_right = true
+entity_spritesheet = blob3.png
+entity_size = 16 16
+entity_behavior = patrol shoot
+
+[s]
+tile_type = bg
+tile_group = 3
+tileset = tileset_dirt_bg.tga
+tile_group_tolerance = 1 2
+entity_id = site
+entity_spritesheet = goal.png
+entity_effects = win
+
+[@]
+tile_type = bg
+tile_group = 3
+tileset = tileset_dirt_bg.tga
+tile_group_tolerance = 1 2
+entity_id = player
+entity_face_right = true
+entity_spritesheet = player.png
+entity_size = 16 16

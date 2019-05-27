@@ -1,0 +1,60 @@
+[map]
+data = ....... """""""""""".....
+       .       ="""""""""""    .
+       .       =="""""""""     .
+       .        =""""""==      .
+       .        ="""""====  s  .
+       .        ========="""""""
+       .         ========"""""""
+       .     """"=====""""""""""
+       888088""""===="""""""""""
+       888888""""""=="""""""""""
+       08888888"""""""""""""88""
+       0808888888""""""""""88808
+       88080888888808""""8888888
+
+bg = bg_1.png
+
+[8]
+tile_type = solid
+tile_group = 1
+tileset = tileset_dirt.tga
+tile_group_tolerance = 2
+
+[0]
+tile_type = solid
+tile_group = 1
+tileset = tileset_dirt_rock.tga
+tile_group_tolerance = 2
+
+["]
+tile_type = solid
+tile_group = 2
+tileset = tileset_greens.tga
+
+[=]
+tile_type = bg
+tile_group = 3
+tileset = tileset_greens_bg.tga
+tile_group_tolerance = 1 2
+
+[b]
+tile_type = none
+entity_id = enemy
+entity_face_right = true
+entity_spritesheet = blob.png
+entity_size = 16 16
+entity_behavior = patrol
+
+[s]
+tile_type = none
+entity_id = site
+entity_spritesheet = save_site.png
+entity_effects = save
+
+[@]
+tile_type = none
+entity_id = player
+entity_face_right = true
+entity_spritesheet = player.png
+entity_size = 16 16

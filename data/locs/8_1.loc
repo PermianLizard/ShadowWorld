@@ -1,0 +1,52 @@
+[map]
+data = ................""*****"=
+       .                ""***""=
+       .                 """""==
+       .                  ======
+       .                   =====
+       .                    ====
+       .                  """"""
+       .                 """""**
+       .                """""***
+       .                   """"*
+       """"""""             """"
+       """""""8             """"
+       """"""80.........."""""""
+
+bg = bg_1.png
+
+[8]
+tile_type = solid
+tile_group = 1
+tileset = tileset_dirt.tga
+tile_group_tolerance = 2
+
+[0]
+tile_type = solid
+tile_group = 1
+tileset = tileset_dirt_rock.tga
+tile_group_tolerance = 2
+
+["]
+tile_type = solid
+tile_group = 2
+tile_group_tolerance = 4
+tileset = tileset_greens.tga
+
+[*]
+tile_type = solid
+tile_group = 4
+tileset = tileset_greens.tga
+
+[=]
+tile_type = bg
+tile_group = 3
+tileset = tileset_greens_bg.tga
+tile_group_tolerance = 1 2
+
+[@]
+tile_type = none
+entity_id = player
+entity_face_right = true
+entity_spritesheet = player.png
+entity_size = 16 16

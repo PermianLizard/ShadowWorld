@@ -1,0 +1,43 @@
+[map]
+data = 0000888888...............
+       00000888                .
+       000000888               .
+       000008888               .
+       000088888               .
+       00088888                .
+       0888888                 .
+       8888=                   =
+       8=====                 ==
+       8========             ===
+       8==========           ===
+       8====@======        =====
+       8888888888888888888888888
+
+bg = bg_1.png
+
+[8]
+tile_type = solid
+tile_group = 1
+tileset = tileset_dirt.tga
+
+[0]
+tile_type = solid
+tile_group = 1
+tileset = tileset_dirt_rock.tga
+tile_group_tolerance = 1
+
+[=]
+tile_type = bg
+tile_group = 2
+tileset = tileset_dirt_bg.tga
+tile_group_tolerance = 1
+
+[@]
+tile_type = bg
+tile_group = 2
+tileset = tileset_dirt_bg.tga
+tile_group_tolerance = 1
+entity_id = player
+entity_face_right = true
+entity_spritesheet = player.png
+entity_size = 16 16
