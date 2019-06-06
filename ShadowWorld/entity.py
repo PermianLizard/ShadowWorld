@@ -135,8 +135,6 @@ def make(**kwargs):
 
 
 def make_pc(**kwargs):
-    print('MAKING PC ---')
-
     pos = kwargs['pos']
     size = [int(v) for v in kwargs['size'].split()]
     spritesheet = kwargs['spritesheet']
@@ -189,19 +187,6 @@ def make_liquid(**kwargs):
     e = Entity(info=InfoComp('Liquid', 'liquid'),
                phys=PhysComp(pos=pos, size=size),
                render=RenderComp(spritesheet, size, 2))
-    return e
-
-
-def make_site(**kwargs):
-    pos = kwargs['pos']
-    size = (TILE_SIZE, TILE_SIZE)
-    spritesheet = kwargs['spritesheet']
-    effects = kwargs['effects'].split()
-
-    e = Entity(info=InfoComp('Site', 'site'),
-               phys=PhysComp(pos=pos, size=size),
-               render=RenderComp(spritesheet, size, 0),
-               effect=EffectComp(effects))
     return e
 
 
